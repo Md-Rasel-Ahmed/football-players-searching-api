@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BootStrap cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Player search</title>
+    <style>
+        textarea:hover,
+        input:hover,
+        textarea:active,
+        input:active,
+        textarea:focus,
+        input:focus,
+        button:focus,
+        button:active,
+        button:hover,
+        label:focus,
+        .btn:active,
+        .btn.active {
+            outline: 0px !important;
+            -webkit-appearance: none;
+            box-shadow: none !important;
+        }
+        .text-danger{
+            display:none;
+        }
+        select{
+            padding:5px;
+            outline:none;
+        }/* Center the loader */
+        
+#loader {
+  display:none;
+  width:150px;
+  margin:0 auto;
+}
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+} 
+
+    </style>
+</head>
+
+<body>
+    <div id="google_translate_element"></div>
+    <h2 class="text-center text-primary py-5">SEARCH YOUR FAVORITE PLAYERS</h2>
+    <div class="container">
+        <form class="w-50 w-sm-75 mx-auto">
+            <div class="input-group mb-3 d-flex justify-content-center">
+                <input type="text" id="text" class="form-control" placeholder="Search players..."
+                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <button class="input-group-text" id="basic-addon2">Search</button>
+            </div>
+            <button id="loader" class="btn btn-primary" type="button" disabled>
+  <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+  Loading...
+</button>
+        </form>
+        
+    </div>
+    <div class="p-2 d-flex justify-content-center animate-bottom " id="card">
+        <h1 class="text-danger text-center">Player Not founded!</h1>
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="./c1jiqs1510319219.jpg" class=" img-fluid rounded-start" alt="Player img">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title"><span>Paul Pogba</span></h5>
+                        <p class="card-text">Paul Labile Pogba (born 15 March 1993) is a French professional footballer who plays for Premier Lea....</p>
+                        <!-- modal -->
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">
+                            Details
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="staticBackdropLabel">Pogba</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h5 class="card-title">Nationality: <span class="nationality">France</span></h5>
+                                        <h5 class="card-title">Club: <span class="club">Man United</span></h5>
+                                        <h5 class="card-title">Position: <span class="position">Midfielder</span></h5>
+                                        <h5 class="card-title">Jersey Number: <span class="number">6</span></h5>
+                                        <p class="description">Paul Labile Pogba (born 15 March 1993) is a French professional footballer who plays for Premier League club Manchester
+                                        United and the French national team. He operates primarily as a central midfielder, but can also be deployed as an
+                                        attacking midfielder, defensive midfielder, and deep-lying playmaker. Born in Lagny-sur-Marne, Pogba showcased promise
+                                        as a youngster, flourishing as a member of local youth teams. He eventually joined the youth team of Ligue 1 side Le
+                                        Havre, before a protracted transfer brought him to Manchester United in 2009. After beginning his senior career with
+                                        Manchester United two years later, limited appearances forced him to depart to join Italian side Juventus on a free
+                                        transfer in 2012, and helped the club to four consecutive Serie A titles, as well as two Coppa Italia and two Supercoppa
+                                        Italiana titles. During his time in Italy, Pogba established himself as one of the most promising young players in the
+                                        world, and received the Golden Boy award in 2013, followed by the Bravo Award in 2014, while also being named by The
+                                        Guardian as one of the ten most promising young players in Europe. In 2016, Pogba was named to the 2015 UEFA Team of the
+                                        Year, as well as the 2015 FIFA FIFPro World XI, after helping Juventus to the 2015 UEFA Champions League Final, their
+                                        first in 12 years. Pogba's performances at Juventus allowed him to return to Manchester United in 2016 for a then-world
+                                        record transfer fee of €105 million (£89.3 million). The fee paid for him remains the highest paid by an English club.
+                                        In his first season back, he won the League Cup and the Europa League. Internationally, at under-20 level, he captained
+                                        France to victory at the 2013 FIFA U-20 World Cup and took home the award for the Best Player for his performances
+                                        during the tournament. He made his debut for the senior French national team on 22 March 2013 in a 3–1 win against
+                                        Georgia, and scored his first World Cup goal on 30 June 2014 against Nigeria; he was awarded the Best Young Player Award
+                                        for his performances at the 2014 FIFA World Cup, after reaching the quarter-final. He later represented his nation at
+                                        UEFA Euro 2016 on home soil, where he scored one goal as his team reached the final. Two years later, he won the 2018
+                                        FIFA World Cup in Russia.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    
+
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
